@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  /* cursor: none; */
+}
+
+html {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(37 32 32);
+  color: #fff;
+  font-family: 'CY grotesk key';
+  font-weight: light;
+  /* Esto hace que al colocar el cursor a la derecha de la pantalla no aparezca el scroll horizontal */
+  overflow-x: hidden;
+  width: 100%;
+  /* Esto hace que al colocar el cursor a la derecha de la pantalla no aparezca el scroll horizontal */
+
+  /* Animación de fondo */
+  background: linear-gradient(-45deg, #1a1a2e, #16213e, #0f3460, #53354a);
+  background-size: 400% 400%;
+  animation: gradient 2.5s ease infinite;
+  /* Animación de fondo */
+}
+/* @layer components {
+  .menu-item {
+    @apply ;
+  }
+} */
+
+/* Animación de fondo */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+  /* Animación de fondo */
+}
